@@ -42,6 +42,10 @@ Composants techniques transversaux, outils pour l'intégration, l'automatisation
 ```bash
 pip install -e .
 ```
+or
+```bash
+pip install git+https://github.com/starlingadama/startling-lib.git
+```
 
 > Assure-toi d’avoir `pyproject.toml` configuré correctement.
 
