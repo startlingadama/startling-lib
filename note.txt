@@ -1,0 +1,81 @@
+1. Installation locale avec `pip` (dev)
+
+```bash
+pip install -e .
+```
+
+2. Publier sur GitHub (partage ou installation via `pip`)
+
+### Étapes :
+
+1. **Créer un repo GitHub** (nom : `startling_lib` par exemple)
+
+2. Ajouter le remote :
+
+   ```bash
+   git remote add origin https://github.com/ton-utilisateur/startling_lib.git
+   git push -u origin main
+   ```
+
+3. (Optionnel) Ajoute un tag versionné :
+
+   ```bash
+   git tag v0.1.0
+   git push --tags
+   ```
+
+### Installation via GitHub :
+
+Un autre utilisateur peut l’installer directement :
+
+```bash
+pip install git+https://github.com/ton-utilisateur/startling_lib.git
+```
+
+> Marche même sans publier sur PyPI, tant que le projet a un `pyproject.toml`.
+
+---
+
+3. Publier sur PyPI (officiel `pip install startling-lib`)
+
+### A. Préparer l’environnement :
+
+```bash
+pip install build twine
+```
+
+### B. Construire le package :
+
+```bash
+python -m build
+```
+
+Tu obtiens un dossier `dist/` avec :
+
+```
+dist/
+├── startling_lib-0.1.0.tar.gz
+└── startling_lib-0.1.0-py3-none-any.whl
+```
+
+### C. Publier :
+
+Crée un compte ici si tu ne l’as pas : [https://pypi.org/account/register/](https://pypi.org/account/register/)
+
+Puis :
+
+```bash
+twine upload dist/*
+```
+
+> Il te demandera ton identifiant PyPI et ton mot de passe/API token.
+
+---
+
+## Une fois publié sur PyPI :
+
+Tout le monde peut faire :
+
+```bash
+pip install startling-lib
+```
