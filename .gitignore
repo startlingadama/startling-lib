@@ -1,1 +1,44 @@
-.venv/*
+# Environnement virtuel
+.venv/
+env/
+venv/
+
+# Bytecode Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Fichiers de build / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Cache de test
+.pytest_cache/
+.tox/
+
+# Cache de l'interpréteur
+.ipynb_checkpoints/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.coverage
+htmlcov/
+coverage.xml
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Wheel files (rare si générés localement)
+*.whl

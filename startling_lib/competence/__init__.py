@@ -1,1 +1,1 @@
-from competence import Competence, Personal
+from startling_lib.competence.competence import Competence, Personal
