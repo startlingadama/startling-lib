@@ -34,9 +34,9 @@ jobs:
       - name: ✅ Run tests
         run: |
           source .venv/bin/activate
-          pytest --cov=startling_lib tests/
+          pytest --cov --cov-branch --cov-report=xml
 
       - name: 📈 Upload coverage to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
