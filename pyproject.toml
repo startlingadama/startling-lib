@@ -1,6 +1,6 @@
 [project]
 name = "startling-lib"
-version = "0.1.1"
+version = "0.1.2"
 description = "Une bibliothèque minimale faite par startlingadama"
 authors = [{ name = "Adama Coulibaly", email = "startlingadama@email.com" }]
 readme = "README.md"

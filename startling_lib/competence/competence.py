@@ -15,4 +15,4 @@ class Competence:
         return self.personal
 
     def __str__(self):
-        return f"class {personal.firstname}_{personal.lastname}_{id(self)}"
+        return f"class {self.personal.firstname}_{self.personal.lastname}_{id(self)}"
