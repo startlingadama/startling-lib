@@ -1,6 +1,11 @@
 import pytest
-from startling_lib import Competence
+from startling_lib import Competence,Personal
 from pydantic import BaseModel
+
+@pytest.fixture
+def personal():
+    return Personal()
+
 
 def test_competence():
     competence = Competence()
@@ -9,5 +14,6 @@ def test_competence():
     
     print("test competence passé avec success.")
 
-if __name__ == "__main__":
-    test_competence()
+def personal_test():
+
+    assert personal.firstname == "Adama" and personal.lastname == "COULIBALY"

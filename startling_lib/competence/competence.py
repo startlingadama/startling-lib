@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 
 class Personal(BaseModel):
-    fistname: str = Field(description = "The first name", default = "Adama")
+    firstname: str = Field(description = "The first name", default = "Adama")
     lastname: str = Field(description = "The last name", default = "COULIBALY")
 
 class Competence:

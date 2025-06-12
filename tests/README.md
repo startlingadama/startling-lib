@@ -56,6 +56,10 @@ def test_personal_fields():
     p = Personal(firstname="Adama", lastname="Kane")
     assert p.firstname == "Adama"
 ```
+---
+## Test
+
+[![codecov](https://codecov.io/gh/startlingadama/startling-lib/branch/main/graph/badge.svg)](https://codecov.io/gh/startlingadama/startling-lib)
 
 ---
 
